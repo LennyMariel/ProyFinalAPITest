@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.api.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.355 s <<< FAILURE! - in com.ejemplo.api.RunnerTest
+testParallel  Time elapsed: 19.327 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 200, expected: 400, response time in milliseconds: 2089, url: https://fakerestapi.azurewebsites.net/api/v1/Users, response: 
+{"id":9999,"userName":"","password":"PasswordInvalida"}
+src/test/resources/features/Post_UserName_Vacio.feature:14 ==> expected: <0> but was: <1>
+	at com.ejemplo.api.RunnerTest.testParallel(RunnerTest.java:22)
+
