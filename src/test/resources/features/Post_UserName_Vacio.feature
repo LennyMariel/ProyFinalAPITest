@@ -5,7 +5,7 @@ Feature: endpoint user permite crear un usuario con userName vacío
   And request
     """
     {
-      "id": 9999,
+      "id": 4637,
       "userName": "",
       "password": "PasswordInvalida"
     }
