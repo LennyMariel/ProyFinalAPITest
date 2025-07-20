@@ -21,12 +21,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"bfa98055-f3c3-422c-970b-f70830a1fa40",karate_version:"1.4.0",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"6571ff9b-4993-41ab-bd15-b8b18e1c55a9",karate_version:"1.4.0",karate_meta:null});
   }
 });
 </script>
 
-    <title>src.test.resources.features.api_test</title>
+    <title>src.test.resources.coverPhotos.coverPhotos_DELETE</title>
   </head>
   <body>
     <div id="root-container">
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,13 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-07-19 04:32:50 p. m.</div>
+    <div>2025-07-19 09:42:39 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Obtener todos los usuarios</span></a>
+          <div class="nav-item failed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Validar que no se permite eliminar una portada inexistente por id</span></a>
           </div>
         </div>
       </div>
@@ -64,75 +64,47 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">src/test/resources/features/api_test.feature</span><span class="feature-label">|</span>
+          <span class="feature-path">src/test/resources/coverPhotos/coverPhotos_DELETE.feature</span><span class="feature-label">|</span>
           <span class="feature-name">Pruebas de la API FakeRest</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:6]">
+          <div class="scenario-heading" id="[1:7]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:6]</span>
-                <span class="scenario-name">Obtener todos los usuarios</span>
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Validar que no se permite eliminar una portada inexistente por id</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3635</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1988</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:6]bg">
+            <div class="step-container" id="[1:7]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:6]bg"><div>
+          <div data-parent="[1:7]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url &#39;https://fakerestapi.azurewebsites.net/api/v1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">243</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref passed">7</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;Users&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">82</div>
   </div>
 
    
@@ -157,10 +129,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">8</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method get</span>
+        <span>Given</span>&nbsp;<span>path &#39;CoverPhotos&#39;, 999</span>
       </div>
     </div>
-    <div class="time-cell passed">3074</div>
+    <div class="time-cell passed">26</div>
   </div>
 
    
@@ -169,24 +141,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">16:32:47.923 request:
-1 &gt; GET https://fakerestapi.azurewebsites.net/api/v1/Users
-1 &gt; Host: fakerestapi.azurewebsites.net
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.27)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-16:32:49.809 response time in milliseconds: 1873
-1 &lt; 200
-1 &lt; Content-Type: application/json; charset=utf-8; v=1.0
-1 &lt; Date: Sat, 19 Jul 2025 20:32:49 GMT
-1 &lt; Server: Kestrel
-1 &lt; Transfer-Encoding: chunked
-1 &lt; api-supported-versions: 1.0
-[{&quot;id&quot;:1,&quot;userName&quot;:&quot;User 1&quot;,&quot;password&quot;:&quot;Password1&quot;},{&quot;id&quot;:2,&quot;userName&quot;:&quot;User 2&quot;,&quot;password&quot;:&quot;Password2&quot;},{&quot;id&quot;:3,&quot;userName&quot;:&quot;User 3&quot;,&quot;password&quot;:&quot;Password3&quot;},{&quot;id&quot;:4,&quot;userName&quot;:&quot;User 4&quot;,&quot;password&quot;:&quot;Password4&quot;},{&quot;id&quot;:5,&quot;userName&quot;:&quot;User 5&quot;,&quot;password&quot;:&quot;Password5&quot;},{&quot;id&quot;:6,&quot;userName&quot;:&quot;User 6&quot;,&quot;password&quot;:&quot;Password6&quot;},{&quot;id&quot;:7,&quot;userName&quot;:&quot;User 7&quot;,&quot;password&quot;:&quot;Password7&quot;},{&quot;id&quot;:8,&quot;userName&quot;:&quot;User 8&quot;,&quot;password&quot;:&quot;Password8&quot;},{&quot;id&quot;:9,&quot;userName&quot;:&quot;User 9&quot;,&quot;password&quot;:&quot;Password9&quot;},{&quot;id&quot;:10,&quot;userName&quot;:&quot;User 10&quot;,&quot;password&quot;:&quot;Password10&quot;}]
-
-</div>   
+     
 
   
 
@@ -202,10 +157,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">9</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1866</div>
   </div>
 
    
@@ -214,7 +169,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.9">21:42:37.410 request:
+1 &gt; DELETE https://fakerestapi.azurewebsites.net/api/v1/CoverPhotos/999
+1 &gt; Host: fakerestapi.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:42:38.895 response time in milliseconds: 1474
+1 &lt; 200
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 20 Jul 2025 01:42:38 GMT
+1 &lt; Server: Kestrel
+1 &lt; api-supported-versions: 1.0
+
+
+</div>   
 
   
 
@@ -227,13 +198,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+      <div class="step-ref failed">10</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response contains deep { id: 1, userName: &#39;#string&#39; }</span>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
       </div>
     </div>
-    <div class="time-cell passed">317</div>
+    <div class="time-cell failed">14</div>
   </div>
 
    
@@ -242,7 +213,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.10">21:42:38.998 src/test/resources/coverPhotos/coverPhotos_DELETE.feature:10
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 1474, url: https://fakerestapi.azurewebsites.net/api/v1/CoverPhotos/999, response: 
+
+src/test/resources/coverPhotos/coverPhotos_DELETE.feature:10
+</div>   
 
   
 
