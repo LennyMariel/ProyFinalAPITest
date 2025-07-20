@@ -8,3 +8,4 @@ Feature: Pruebas de la API FakeRest
         Given path 'CoverPhotos', 999
         When method delete
         Then status 404
+        
