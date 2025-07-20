@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "karateRunner.karateRunner.default": "RunnerTest"
+=======
+    "karateRunner.karateRunner.default": "RunnerTest,java",
+    "java.configuration.updateBuildConfiguration": "interactive"
+>>>>>>> 23184ec6838166a0c1c1fd7b59c786395ccefe09
 }

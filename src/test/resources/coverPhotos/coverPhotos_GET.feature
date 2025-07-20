@@ -8,6 +8,7 @@ Feature: Pruebas de la API FakeRest
         When method get
         Then status 200
 
+<<<<<<< HEAD
     Scenario: Obtener portadas por idBook existente
         Given path 'CoverPhotos', 'books', 'covers', 150
         When method get
@@ -19,4 +20,17 @@ Feature: Pruebas de la API FakeRest
         Given path 'CoverPhotos', 'books', 'covers', -5
         When method get
         Then status 400
+=======
+Scenario: Obtener portadas por idBook existente
+    Given path 'CoverPhotos', 'books', 'covers', 150
+    When method get
+    Then status 200
+    And assert response.length >= 1
+    And match response[0] contains { id: '#number', url: '#string', idBook: 150 }
+
+Scenario: Obtener portadas con idBook negativo
+    Given path 'CoverPhotos', 'books', 'covers', -5
+    When method get
+    Then status 400
+>>>>>>> 23184ec6838166a0c1c1fd7b59c786395ccefe09
 

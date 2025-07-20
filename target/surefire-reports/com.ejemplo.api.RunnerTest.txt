@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -------------------------------------------------------------------------------
 Test set: com.ejemplo.api.RunnerTest
 -------------------------------------------------------------------------------
@@ -9,3 +10,9 @@ status code was: 200, expected: 404, response time in milliseconds: 1474, url: h
 src/test/resources/coverPhotos/coverPhotos_DELETE.feature:10 ==> expected: <0> but was: <1>
 	at com.ejemplo.api.RunnerTest.testParallel(RunnerTest.java:22)
 
+=======
+-------------------------------------------------------------------------------
+Test set: com.ejemplo.api.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.144 s - in com.ejemplo.api.RunnerTest
+>>>>>>> 23184ec6838166a0c1c1fd7b59c786395ccefe09
