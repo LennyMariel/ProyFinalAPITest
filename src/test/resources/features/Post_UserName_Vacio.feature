@@ -7,7 +7,7 @@ Feature: endpoint user permite crear un usuario con userName vacío
     {
       "id": 4637,
       "userName": "",
-      "password": "PasswordInvalida"
+      "password": "1234567sadsd"
     }
     """
   When method post
