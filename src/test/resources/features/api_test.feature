@@ -19,4 +19,6 @@ Feature: Pruebas de la API FakeRest
     Given path 'Books'
     When method get
     Then status 200
-    And match response[0].title != null
+    And match response[0].title != null\
+
+
